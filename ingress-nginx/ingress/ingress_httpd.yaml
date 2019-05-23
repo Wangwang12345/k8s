@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: httpd-test
+spec:
+  rules:
+  - host: foo.bar.com
+    http:
+      paths:
+      - path: /httpd/
+        backend:
+          serviceName: httpd
+          servicePort: 80
