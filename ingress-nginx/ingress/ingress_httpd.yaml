@@ -7,7 +7,7 @@ spec:
   - host: foo.bar.com
     http:
       paths:
-      - path: /httpd/
+      - path: /
         backend:
           serviceName: httpd
           servicePort: 80
